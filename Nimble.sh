@@ -43,7 +43,7 @@ git clone https://github.com/nimble-technology/nimble-miner-public.git
 cd nimble-miner-public
 make install
 cd  $HOME
-screen -dmS nim bash -c 'cd $HOME/nimble; cd nimble-miner-public; source /root/.bashrc; make run addr=$wallet_addr''
+screen -dmS nim bash -c 'cd $HOME/nimble; cd nimble-miner-public; source /root/.bashrc; make run addr=$wallet_addr'
 
 
 }
