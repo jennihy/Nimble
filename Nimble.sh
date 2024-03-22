@@ -14,7 +14,7 @@ function install_node() {
 apt update
 
 # 检查 Git 等是否已安装
-apt install git python3-venv bison screen binutils gcc make bsdmainutils -y
+apt install git python3-venv bison screen binutils gcc make bsdmainutils python3-pip -y
 
 # 安装numpy
 pip install numpy==1.24.4
