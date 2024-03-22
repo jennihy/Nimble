@@ -38,6 +38,7 @@ sleep 30
 
 # 启动挖矿
 read -p "请输入钱包地址: " wallet_addr
+export wallet_addr
 cd  $HOME/nimble
 git clone https://github.com/nimble-technology/nimble-miner-public.git
 cd nimble-miner-public
