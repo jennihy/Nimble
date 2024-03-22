@@ -18,7 +18,7 @@ apt install git python3-venv bison screen binutils gcc make bsdmainutils -y
 
 # 安装GO
 rm -rf /usr/local/go
-curl -L https://go.dev/dl/go1.21.6.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
+curl -L https://go.dev/dl/go1.21.6.linux-amd64.tar.gz | tar -xzf - -C /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile
 source .bash_profile
 
