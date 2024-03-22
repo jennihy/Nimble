@@ -31,7 +31,7 @@ make install
 # 创建钱包
 nimble-networkd keys add ilovenimble
 
-echo:备份好钱包和助记词，下方需要使用
+echo "=============================备份好钱包和助记词，下方需要使用==================================="
 
 sleep 30
 
