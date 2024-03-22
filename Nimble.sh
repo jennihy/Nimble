@@ -11,13 +11,13 @@ fi
 function install_node() {
 
 # 更新系统包列表
-sudo apt update
+apt update
 
 # 检查 Git 等是否已安装
-sudo apt install git python3-venv bison screen binutils gcc make bsdmainutils -y
+apt install git python3-venv bison screen binutils gcc make bsdmainutils -y
 
 # 安装GO
-sudo rm -rf /usr/local/go
+rm -rf /usr/local/go
 curl -L https://go.dev/dl/go1.21.6.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile
 source .bash_profile
