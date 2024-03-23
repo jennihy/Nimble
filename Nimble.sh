@@ -45,8 +45,8 @@ read -p "请输入钱包地址: " wallet_addr
 export wallet_addr
 cd  $HOME/nimble
 git clone https://github.com/nimble-technology/nimble-miner-public.git
-cd nimble-miner-public
 sed -i 's/numpy==1.26.4/numpy==1.24.2/g' requirements.txt
+cd nimble-miner-public
 make install
 cd  $HOME
 screen -dmS nim bash -c 'cd $HOME/nimble; cd nimble-miner-public; source /root/.bashrc; make run addr=$wallet_addr'
