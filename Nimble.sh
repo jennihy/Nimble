@@ -33,7 +33,7 @@ cd wallet-public
 make install
 
 # 创建钱包
-nimble-networkd keys add ilovenimble
+nimble-networkd keys add ilovenimble --keyring-backend file
 
 echo "=============================备份好钱包和助记词，下方需要使用==================================="
 
