@@ -37,7 +37,7 @@ nimble-networkd keys add ilovenimble --keyring-backend file
 
 echo "=============================备份好钱包和助记词，下方需要使用==================================="
 
-sleep 30
+sleep 10
 
 
 # 设置钱包
@@ -45,8 +45,8 @@ read -p "请输入钱包地址: " wallet_addr
 export wallet_addr
 cd  $HOME/nimble
 git clone https://github.com/nimble-technology/nimble-miner-public.git
-sed -i 's/numpy==1.26.4/numpy==1.24.2/g' requirements.txt
 cd nimble-miner-public
+sed -i 's/numpy==1.26.4/numpy==1.24.2/g' requirements.txt || exit 1
 pip3 uninstall fsspec
 pip3 install 'fsspec<=2023.10.0'
 # 编译安装
